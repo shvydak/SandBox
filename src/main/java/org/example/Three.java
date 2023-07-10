@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Random;
 
-public class RandomStringGenerator {
+public class Three {
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     private static final Random RANDOM = new Random();
 
