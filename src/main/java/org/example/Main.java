@@ -9,18 +9,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
-        WebDriverManager.chromedriver().setup();
-        WebDriver webDriver;
-        webDriver = new ChromeDriver();
-        webDriver.navigate().to("https://melodic-mind.com/");
-        JavascriptExecutor js = (JavascriptExecutor) webDriver;
-        js.executeScript("window.scrollBy(0,500)");
 
+        Temp print = new Temp();
+        System.out.println(print.getMyString());
     }
 }

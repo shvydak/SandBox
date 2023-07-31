@@ -25,11 +25,17 @@ public class Temp {
         test();
         Actions actions = new Actions(webDriver);
 
-        WebDriverWait wait = new WebDriverWait(webDriver,Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
         Alert alert = wait.until(alertIsPresent());
         alert.accept();
         alert.dismiss();
 
+    }
+
+    public String myString = "TEST";
+
+    public String getMyString() {
+        return myString;
     }
 
     @FindBy(xpath = "(//input[@name='btnK'])[2]")
